@@ -49,6 +49,13 @@
 	"content": ""
 },
 {
+	"uri": "https://ridingintraffic.github.io/docs/docs/git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": "## Git Revert ## Git checkout master #then run a git log and get the id of the merge commit. git log #then revert to that commit: git revert -m 1 \u0026lt;merge-commit\u0026gt; # With ‘-m 1’ we tell git to revert to the first parent of the mergecommit on the master branch. -m 2 would specify to revert to the first parent on the develop branch where the merge came from initially. Now commit the revert and push changes to the remote repo and you are done. Getting back the reverted changes This changes the data to look like before the merge, but not the history. So it’s not exactly like an undo. If we would merge develop into master again the changes we reverted in master wont be applied. So if we would like these changes back again we could revert our first revert(!). git revert \u0026lt;commit-of-first-revert\u0026gt;  git log --follow -p \u0026lt;filename/path\u0026gt; #view the log of a single file # git rebase squash git rebase -i \u0026lt;commit hash\u0026gt;; where the commit hash is the one before yours the reword all of hte commits except for your latest one, the latest one you pick then check the git log to make sure that you only have one commit git push --force # which will force your local into the branch you are working on and hopefully everything will get squashed  "
+},
+{
 	"uri": "https://ridingintraffic.github.io/docs/posts/",
 	"title": "Posts",
 	"tags": [],
@@ -61,4 +68,46 @@
 	"tags": [],
 	"description": "",
 	"content": ""
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/categories/wiki/",
+	"title": "Wiki",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/docs/ansible/",
+	"title": "ansible",
+	"tags": [],
+	"description": "",
+	"content": " ansible notes https://galaxy.ansible.com/ Galaxy is your hub for finding, reusing and sharing Ansible content\nhttps://github.com/wilmardo/ansible-role-plex repo for the plex install with ansible\u0026hellip; something for later\n"
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/docs/chef/",
+	"title": "chef",
+	"tags": [],
+	"description": "",
+	"content": " chef notes $ kitchen list $ kitchen converge ;# creates the vagrant box from the kitchen.yml $ kitchen exec -c whoami ;#fire a command from insid ethe vagrant box $ kitchen verify ;# runs the tests that are configured $ kitchen login ; # logs into the box directly gives a shell  "
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/docs/cli/",
+	"title": "cli",
+	"tags": [],
+	"description": "",
+	"content": " shasum Getting a shasum on something\u0026hellip; useful so lets do it with this\nshasum -a 256 \u0026lt;filename\u0026gt;\n"
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/docs/qmk/",
+	"title": "qmk",
+	"tags": [],
+	"description": "",
+	"content": " qmk notes there is a bunch of qmk stuff out there this is what you need for qmk and the ergodox ez keyboard…\nhttps://docs.qmk.fm/ - qmk documentation\nhttps://www.pjrc.com/teensy/loader_linux.html \n***if you are programming it with the qmk toolbox make sure that your have karabiner elements turned off\ndocker images qmk builder can be done via docker. This means that it is way easier to build than dealing with all the dependencies for building, just use docker.\n docker run -e keymap=default_modded -e keyboard=ergodox_ez --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware docker run -e keymap=ridingintraffic -e keyboard=ergodox_ez --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware docker run -e keymap=ridingintraffic -e keyboard=planck/rev4 --rm -v $('pwd'):/qmk:rw edasque/qmk_firmware  location for qmk build and install https://github.com/qmk/qmk_toolbox/releases\n"
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/docs/tmux/",
+	"title": "tmux",
+	"tags": [],
+	"description": "",
+	"content": " vim scrolling Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.\nSelection and copying once in acroll mode spacebar character slect mode\nonce in scroll mode shift+V line select mode\nonce selected y copies to clipboard\npaste like normal\n"
 }]

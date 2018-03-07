@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.36.1" />
-<title>My First Post :: docs</title>
+<title>Wiki :: docs</title>
 <link rel="shortcut icon" href="/docs/images/favicon.png" type="image/x-icon" />
 <link href="/docs/css/font-awesome.min.css" rel="stylesheet">
 <link href="/docs/css/nucleus.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
     
   </head>
-  <body data-url="/docs/posts/my-first-post/">
+  <body data-url="/docs/categories/wiki/">
     
       <header>
   <div class="logo">
@@ -124,14 +124,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/docs/posts/" class="dd-item parent haschildren
+    <li data-nav-id="/docs/posts/" class="dd-item haschildren
         ">
       <div>
-      <a href="/docs/posts/">Posts</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/docs/posts/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/docs/posts/my-first-post/" class="dd-item active">
+      <li data-nav-id="/docs/posts/my-first-post/" class="dd-item">
         <div>
           <a href="/docs/posts/my-first-post/">
             My First Post
@@ -157,9 +156,7 @@
     <option value="/docs/docs/" >
    Docs</option>
     <option value="/docs/posts/" >
-   Posts</option> 
-      <option value="/docs/posts/my-first-post/"  selected>- My First Post</option>
-  
+   Posts</option>
 
 
 
@@ -182,19 +179,152 @@
       </div>
     
 
-    <h1>My First Post</h1>
+    <h1>Wiki</h1>
     
     
     
-    <p>adding something here</p>
+
+
+
+<div class="extra-pagination inner">
+<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+</div>
+
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/git/">Git</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>## Git Revert ## Git checkout master #then run a git log and get the id of the merge commit. git log #then revert to that commit: git revert -m 1 &lt;merge-commit&gt; # With ‘-m 1’ we tell git to revert to the first parent of the mergecommit on the master branch. -m 2 would specify to revert to the first parent on the develop branch where the merge came from initially. <a class="read-more" href="/docs/docs/git/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/ansible/">ansible</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>ansible notes https://galaxy.ansible.com/ Galaxy is your hub for finding, reusing and sharing Ansible content
+https://github.com/wilmardo/ansible-role-plex repo for the plex install with ansible&hellip; something for later <a class="read-more" href="/docs/docs/ansible/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/chef/">chef</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p> chef notes $ kitchen list $ kitchen converge ;# creates the vagrant box from the kitchen.yml $ kitchen exec -c whoami ;#fire a command from insid ethe vagrant box $ kitchen verify ;# runs the tests that are configured $ kitchen login ; # logs into the box directly gives a shell   <a class="read-more" href="/docs/docs/chef/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/cli/">cli</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>shasum Getting a shasum on something&hellip; useful so lets do it with this
+shasum -a 256 &lt;filename&gt; <a class="read-more" href="/docs/docs/cli/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/qmk/">qmk</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>qmk notes there is a bunch of qmk stuff out there this is what you need for qmk and the ergodox ez keyboard…
+https://docs.qmk.fm/ - qmk documentation
+https://www.pjrc.com/teensy/loader_linux.html 
+***if you are programming it with the qmk toolbox make sure that your have karabiner elements turned off
+docker images qmk builder can be done via docker. This means that it is way easier to build than dealing with all the dependencies for building, just use docker. <a class="read-more" href="/docs/docs/qmk/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/tmux/">tmux</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>vim scrolling Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+Selection and copying once in acroll mode spacebar character slect mode
+once in scroll mode shift+V line select mode
+once selected y copies to clipboard
+paste like normal <a class="read-more" href="/docs/docs/tmux/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+
+<div style="margin-bottom:2rem"></div>
+
+<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/docs/posts/" title="Posts"> <i class="fa fa-chevron-left"></i><label>Posts</label></a>
-    <a class="nav nav-next" href="/docs/docs/" title="Docs" style="margin-right: 0px;"><label>Docs</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-next" href="/docs/docs/" title="Docs" style="margin-right: 0px;"><label>Docs</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -208,13 +338,9 @@
     
 
   
-    <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 07/03/2018
-    </div>
-    
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/posts/my-first-post.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>

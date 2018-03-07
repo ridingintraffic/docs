@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.36.1" />
-<title>My First Post :: docs</title>
+<title>Git :: docs</title>
 <link rel="shortcut icon" href="/docs/images/favicon.png" type="image/x-icon" />
 <link href="/docs/css/font-awesome.min.css" rel="stylesheet">
 <link href="/docs/css/nucleus.css" rel="stylesheet">
@@ -22,7 +22,7 @@
 
     
   </head>
-  <body data-url="/docs/posts/my-first-post/">
+  <body data-url="/docs/docs/git/">
     
       <header>
   <div class="logo">
@@ -60,10 +60,11 @@
             <i class="fa fa-fw fa-home"></i>
           </a>
           </li>
-    <li data-nav-id="/docs/docs/" class="dd-item haschildren
+    <li data-nav-id="/docs/docs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/docs/docs/">Docs</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/docs/docs/">Docs</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/docs/docs/hugo/" class="dd-item">
@@ -80,7 +81,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/docs/docs/git/" class="dd-item">
+      <li data-nav-id="/docs/docs/git/" class="dd-item active">
         <div>
           <a href="/docs/docs/git/">
             Git
@@ -124,14 +125,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/docs/posts/" class="dd-item parent haschildren
+    <li data-nav-id="/docs/posts/" class="dd-item haschildren
         ">
       <div>
-      <a href="/docs/posts/">Posts</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/docs/posts/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/docs/posts/my-first-post/" class="dd-item active">
+      <li data-nav-id="/docs/posts/my-first-post/" class="dd-item">
         <div>
           <a href="/docs/posts/my-first-post/">
             My First Post
@@ -155,11 +155,18 @@
         <select onchange="javascript:location.href = this.value;">
           
     <option value="/docs/docs/" >
-   Docs</option>
-    <option value="/docs/posts/" >
-   Posts</option> 
-      <option value="/docs/posts/my-first-post/"  selected>- My First Post</option>
+   Docs</option> 
+      <option value="/docs/docs/hugo/" >- Hugo</option>
+      <option value="/docs/docs/terraform/terraform/" >- Terraform</option>
+      <option value="/docs/docs/git/"  selected>- Git</option>
+      <option value="/docs/docs/ansible/" >- ansible</option>
+      <option value="/docs/docs/chef/" >- chef</option>
+      <option value="/docs/docs/cli/" >- cli</option>
+      <option value="/docs/docs/qmk/" >- qmk</option>
+      <option value="/docs/docs/tmux/" >- tmux</option>
   
+    <option value="/docs/posts/" >
+   Posts</option>
 
 
 
@@ -182,19 +189,37 @@
       </div>
     
 
-    <h1>My First Post</h1>
+    <h1>Git</h1>
     
     
     
-    <p>adding something here</p>
+    <pre><code>## Git Revert ##
+Git checkout master    #then run a git log and get the id of the merge commit.  
+git log                #then revert to that commit:
+git revert -m 1 &lt;merge-commit&gt; # With ‘-m 1’ we tell git to revert to the first parent of the mergecommit on the master branch. -m 2 would specify to revert to the first parent on the develop branch where the merge came from initially.
+
+Now commit the revert and push changes to the remote repo and you are done.
+Getting back the reverted changes
+This changes the data to look like before the merge, but not the history. So it’s not exactly like an undo. If we would merge develop into master again the changes we reverted in master wont be applied. So if we would like these changes back again we could revert our first revert(!).
+git revert &lt;commit-of-first-revert&gt;
+</code></pre>
+
+<pre><code>git log --follow -p &lt;filename/path&gt;      #view the log of a single file
+
+# git rebase squash
+git rebase -i &lt;commit hash&gt;; where the commit hash is the one before yours
+the reword all of hte commits except for your latest one, the latest one you pick
+then check the git log to make sure that you only have one commit
+git push --force     # which will force your local into the branch you are working on and hopefully everything will get squashed 
+</code></pre>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/docs/posts/" title="Posts"> <i class="fa fa-chevron-left"></i><label>Posts</label></a>
-    <a class="nav nav-next" href="/docs/docs/" title="Docs" style="margin-right: 0px;"><label>Docs</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/docs/docs/terraform/terraform/" title="Terraform"> <i class="fa fa-chevron-left"></i><label>Terraform</label></a>
+    <a class="nav nav-next" href="/docs/docs/ansible/" title="ansible" style="margin-right: 0px;"><label>ansible</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -208,13 +233,9 @@
     
 
   
-    <div class="date">
-        <i class='fa fa-calendar'></i> Last update on 07/03/2018
-    </div>
-    
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/posts/my-first-post.md" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/docs/git.md" target="blank"><i class="fa fa-code-fork"></i>
         Improve this page</a>
     </div>
   </div>

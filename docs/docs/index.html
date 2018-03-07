@@ -81,6 +81,48 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/docs/docs/git/" class="dd-item">
+        <div>
+          <a href="/docs/docs/git/">
+            Git
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/docs/docs/ansible/" class="dd-item">
+        <div>
+          <a href="/docs/docs/ansible/">
+            ansible
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/docs/docs/chef/" class="dd-item">
+        <div>
+          <a href="/docs/docs/chef/">
+            chef
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/docs/docs/cli/" class="dd-item">
+        <div>
+          <a href="/docs/docs/cli/">
+            cli
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/docs/docs/qmk/" class="dd-item">
+        <div>
+          <a href="/docs/docs/qmk/">
+            qmk
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/docs/docs/tmux/" class="dd-item">
+        <div>
+          <a href="/docs/docs/tmux/">
+            tmux
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
     <li data-nav-id="/docs/posts/" class="dd-item haschildren
@@ -116,6 +158,12 @@
    Docs</option> 
       <option value="/docs/docs/hugo/" >- Hugo</option>
       <option value="/docs/docs/terraform/terraform/" >- Terraform</option>
+      <option value="/docs/docs/git/" >- Git</option>
+      <option value="/docs/docs/ansible/" >- ansible</option>
+      <option value="/docs/docs/chef/" >- chef</option>
+      <option value="/docs/docs/cli/" >- cli</option>
+      <option value="/docs/docs/qmk/" >- qmk</option>
+      <option value="/docs/docs/tmux/" >- tmux</option>
   
     <option value="/docs/posts/" >
    Posts</option>
@@ -181,6 +229,118 @@
     </header>
     <section class="post-excerpt">
         <p> <a class="read-more" href="/docs/docs/terraform/terraform/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/git/">Git</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>## Git Revert ## Git checkout master #then run a git log and get the id of the merge commit. git log #then revert to that commit: git revert -m 1 &lt;merge-commit&gt; # With ‘-m 1’ we tell git to revert to the first parent of the mergecommit on the master branch. -m 2 would specify to revert to the first parent on the develop branch where the merge came from initially. <a class="read-more" href="/docs/docs/git/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/ansible/">ansible</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>ansible notes https://galaxy.ansible.com/ Galaxy is your hub for finding, reusing and sharing Ansible content
+https://github.com/wilmardo/ansible-role-plex repo for the plex install with ansible&hellip; something for later <a class="read-more" href="/docs/docs/ansible/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/chef/">chef</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p> chef notes $ kitchen list $ kitchen converge ;# creates the vagrant box from the kitchen.yml $ kitchen exec -c whoami ;#fire a command from insid ethe vagrant box $ kitchen verify ;# runs the tests that are configured $ kitchen login ; # logs into the box directly gives a shell   <a class="read-more" href="/docs/docs/chef/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/cli/">cli</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>shasum Getting a shasum on something&hellip; useful so lets do it with this
+shasum -a 256 &lt;filename&gt; <a class="read-more" href="/docs/docs/cli/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/qmk/">qmk</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>qmk notes there is a bunch of qmk stuff out there this is what you need for qmk and the ergodox ez keyboard…
+https://docs.qmk.fm/ - qmk documentation
+https://www.pjrc.com/teensy/loader_linux.html 
+***if you are programming it with the qmk toolbox make sure that your have karabiner elements turned off
+docker images qmk builder can be done via docker. This means that it is way easier to build than dealing with all the dependencies for building, just use docker. <a class="read-more" href="/docs/docs/qmk/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+        
+
+    </footer>
+</article>
+
+   <article class="post docs">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docs/docs/tmux/">tmux</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>vim scrolling Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+Selection and copying once in acroll mode spacebar character slect mode
+once in scroll mode shift+V line select mode
+once selected y copies to clipboard
+paste like normal <a class="read-more" href="/docs/docs/tmux/">&raquo;</a></p>
     </section>
     <footer class=" footline" >
          
