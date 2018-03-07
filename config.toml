@@ -16,7 +16,7 @@ enableMissingTranslationPlaceholders = false
 
 # [Languages]
 # [Languages.en]
-# title = "Documentation for Hugo docDock"
+# title = "Documentation"
 # weight = 1
 # languageName = "English"
 #
