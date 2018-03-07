@@ -95,7 +95,7 @@ docker images qmk builder can be done via docker. This means that it is way easi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ridingintraffic.github.io/docs/docs/tmux/</guid>
-      <description>vim scrolling Ctrl-b then [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+      <description>vim scrolling Ctrl-b [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
 Selection and copying once in acroll mode spacebar character slect mode
 once in scroll mode shift+V line select mode
 once selected y copies to clipboard
