@@ -1,34 +1,48 @@
 [
 {
-	"uri": "https://ridingintraffic.github.io/hugo-test/posts/my-first-post/",
+	"uri": "https://ridingintraffic.github.io/docs/docs/terraform/terraform/",
+	"title": "Terraform",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/posts/my-first-post/",
 	"title": "My First Post",
 	"tags": [],
 	"description": "",
 	"content": "adding something here\n"
 },
 {
-	"uri": "https://ridingintraffic.github.io/hugo-test/",
+	"uri": "https://ridingintraffic.github.io/docs/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": " something goes here\n"
 },
 {
-	"uri": "https://ridingintraffic.github.io/hugo-test/categories/",
+	"uri": "https://ridingintraffic.github.io/docs/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://ridingintraffic.github.io/hugo-test/posts/",
+	"uri": "https://ridingintraffic.github.io/docs/docs/",
+	"title": "Docs",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/posts/",
 	"title": "Posts",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://ridingintraffic.github.io/hugo-test/tags/",
+	"uri": "https://ridingintraffic.github.io/docs/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

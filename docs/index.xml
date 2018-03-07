@@ -2,21 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documentation</title>
-    <link>https://ridingintraffic.github.io/hugo-test/</link>
+    <link>https://ridingintraffic.github.io/docs/</link>
     <description>Recent content on Documentation</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Mar 2018 10:30:56 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 07 Mar 2018 11:02:22 -0600</lastBuildDate>
     
-	<atom:link href="https://ridingintraffic.github.io/hugo-test/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ridingintraffic.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Terraform</title>
+      <link>https://ridingintraffic.github.io/docs/docs/terraform/terraform/</link>
+      <pubDate>Wed, 07 Mar 2018 11:02:22 -0600</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/terraform/terraform/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
-      <link>https://ridingintraffic.github.io/hugo-test/posts/my-first-post/</link>
+      <link>https://ridingintraffic.github.io/docs/posts/my-first-post/</link>
       <pubDate>Wed, 07 Mar 2018 10:30:56 -0600</pubDate>
       
-      <guid>https://ridingintraffic.github.io/hugo-test/posts/my-first-post/</guid>
+      <guid>https://ridingintraffic.github.io/docs/posts/my-first-post/</guid>
       <description>adding something here</description>
     </item>
     
