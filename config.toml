@@ -5,6 +5,8 @@ DefaultContentLanguage = "en"
 title = "Documentation"
 theme = "docdock"
 
+publishDir = "docs"
+
 #themesdir = "themes/docdock"
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
