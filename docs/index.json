@@ -7,13 +7,6 @@
 	"content": "   Links More links     shortcodes documentation     creating a new anything hugo new docs/hugo.md  "
 },
 {
-	"uri": "https://ridingintraffic.github.io/docs/docs/terraform/terraform/",
-	"title": "Terraform",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://ridingintraffic.github.io/docs/posts/my-first-post/",
 	"title": "My First Post",
 	"tags": [],
