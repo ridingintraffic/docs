@@ -3,12 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ridingintraffic.github.io/hugo-test/categories/</loc>
-    <priority>0</priority>
+    <loc>https://ridingintraffic.github.io/hugo-test/</loc>
   </url>
   
   <url>
-    <loc>https://ridingintraffic.github.io/hugo-test/</loc>
+    <loc>https://ridingintraffic.github.io/hugo-test/categories/</loc>
     <priority>0</priority>
   </url>
   

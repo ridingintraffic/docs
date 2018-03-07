@@ -1,14 +1,14 @@
 [
 {
-	"uri": "https://ridingintraffic.github.io/hugo-test/categories/",
-	"title": "Categories",
+	"uri": "https://ridingintraffic.github.io/hugo-test/",
+	"title": "",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " something goes here\n"
 },
 {
-	"uri": "https://ridingintraffic.github.io/hugo-test/",
-	"title": "Documentation",
+	"uri": "https://ridingintraffic.github.io/hugo-test/categories/",
+	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
