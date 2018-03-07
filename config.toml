@@ -1,5 +1,4 @@
-baseURL = "/docs"
-publishDir = "docs"
+baseURL = "/hugo-test"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "DocDock Documentation"
