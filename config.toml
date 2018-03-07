@@ -1,4 +1,4 @@
-baseURL = "/hugo-test"
+baseURL = "https://ridingintraffic.github.io/hugo-test"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "DocDock Documentation"
