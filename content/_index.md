@@ -1,2 +1,3 @@
-# something
-goes here
+# DOCS
+You have found the doc store of a whole bunch of things...   
+Read at our own peril  this is mostly just my notes
