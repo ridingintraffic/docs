@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "/public"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
