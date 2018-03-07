@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://ridingintraffic.github.io/docs/docs/hugo/",
+	"title": "Hugo",
+	"tags": [],
+	"description": "",
+	"content": "   Links More links     shortcodes documentation     creating a new anything hugo new docs/hugo.md  "
+},
+{
 	"uri": "https://ridingintraffic.github.io/docs/docs/terraform/terraform/",
 	"title": "Terraform",
 	"tags": [],
@@ -12,6 +19,13 @@
 	"tags": [],
 	"description": "",
 	"content": "adding something here\n"
+},
+{
+	"uri": "https://ridingintraffic.github.io/docs/_footer/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "footer\n"
 },
 {
 	"uri": "https://ridingintraffic.github.io/docs/",
