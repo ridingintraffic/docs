@@ -1,8 +1,10 @@
-baseURL = "https://ridingintraffic.github.io/hugo-test"
+baseURL = "https://ridingintraffic.github.io/hugo-test/"
+
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "DocDock Documentation"
+title = "Documentation"
 theme = "docdock"
+
 #themesdir = "themes/docdock"
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
