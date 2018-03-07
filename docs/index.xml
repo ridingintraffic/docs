@@ -72,7 +72,7 @@ https://github.com/wilmardo/ansible-role-plex repo for the plex install with ans
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ridingintraffic.github.io/docs/docs/chef/</guid>
-      <description> chef notes $ kitchen list $ kitchen converge ;# creates the vagrant box from the kitchen.yml $ kitchen exec -c whoami ;#fire a command from insid ethe vagrant box $ kitchen verify ;# runs the tests that are configured $ kitchen login ; # logs into the box directly gives a shell  </description>
+      <description> chef $ kitchen list $ kitchen converge ;# creates the vagrant box from the kitchen.yml $ kitchen exec -c whoami ;#fire a command from insid ethe vagrant box $ kitchen verify ;# runs the tests that are configured $ kitchen login ; # logs into the box directly gives a shell  </description>
     </item>
     
     <item>
@@ -91,7 +91,7 @@ shasum -a 256 &amp;lt;filename&amp;gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ridingintraffic.github.io/docs/docs/qmk/</guid>
-      <description>qmk notes there is a bunch of qmk stuff out there this is what you need for qmk and the ergodox ez keyboard…
+      <description>qmk there is a bunch of qmk stuff out there this is what you need for qmk and the ergodox ez keyboard…
 https://docs.qmk.fm/ - qmk documentation
 https://www.pjrc.com/teensy/loader_linux.html 
 ***if you are programming it with the qmk toolbox make sure that your have karabiner elements turned off
