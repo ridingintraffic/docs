@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/public/categories/</loc>
+    <loc>/docs/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/public/</loc>
+    <loc>/docs/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/public/tags/</loc>
+    <loc>/docs/tags/</loc>
     <priority>0</priority>
   </url>
   

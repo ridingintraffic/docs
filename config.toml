@@ -1,5 +1,5 @@
-baseURL = "/public"
-
+baseURL = "/docs"
+publishDir = "docs"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "DocDock Documentation"

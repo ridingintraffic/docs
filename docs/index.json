@@ -1,20 +1,20 @@
 [
 {
-	"uri": "/public/categories/",
+	"uri": "/docs/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/public/",
+	"uri": "/docs/",
 	"title": "DocDock Documentation",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/public/tags/",
+	"uri": "/docs/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
