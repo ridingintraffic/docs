@@ -1,8 +1,8 @@
-baseURL = "https://ridingintraffic.github.io/hugo-test/"
+baseURL = "https://ridingintraffic.github.io/docs/"
 
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "Documentation"
+title = "docs"
 theme = "docdock"
 
 publishDir = "docs"
@@ -18,7 +18,7 @@ enableMissingTranslationPlaceholders = false
 
 # [Languages]
 # [Languages.en]
-# title = "Documentation"
+# title = "docs"
 # weight = 1
 # languageName = "English"
 #
@@ -49,9 +49,9 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> <label>Github repo</label>"
+name = "<i class='fa fa-rebel'></i> <label>fettis</label>"
 identifier = "ds"
-url = "https://github.com/vjeantet/hugo-theme-docdock"
+url = "https://ridingintraffic.github.io"
 weight = 10
 
 [[menu.shortcuts]]
@@ -65,7 +65,3 @@ identifier = "hugodoc"
 url = "https://gohugo.io/"
 weight = 20
 
-[[menu.shortcuts]]
-name = "<i class='fa fa-bullhorn'></i> <label>Credits</label>"
-url = "/credits"
-weight = 30
