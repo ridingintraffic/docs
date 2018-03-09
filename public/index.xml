@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Material Docs</title>
+    <link>https://ridingintraffic.github.io/docs/</link>
+    <description>Recent content on Material Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Mar 2018 13:06:07 -0600</lastBuildDate>
+    
+	<atom:link href="https://ridingintraffic.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://ridingintraffic.github.io/docs/docs/hugo/</link>
+      <pubDate>Wed, 07 Mar 2018 13:06:07 -0600</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/hugo/</guid>
+      <description>   Links More links     shortcodes documentation     creating a new anything hugo new docs/hugo.md  </description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://ridingintraffic.github.io/docs/posts/my-first-post/</link>
+      <pubDate>Wed, 07 Mar 2018 10:30:56 -0600</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/posts/my-first-post/</guid>
+      <description>adding something here</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://ridingintraffic.github.io/docs/_footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/_footer/</guid>
+      <description>footer</description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://ridingintraffic.github.io/docs/docs/git/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/git/</guid>
+      <description>## Git Revert ## Git checkout master #then run a git log and get the id of the merge commit. git log #then revert to that commit: git revert -m 1 &amp;lt;merge-commit&amp;gt; # With ‘-m 1’ we tell git to revert to the first parent of the mergecommit on the master branch. -m 2 would specify to revert to the first parent on the develop branch where the merge came from initially.</description>
+    </item>
+    
+    <item>
+      <title>ansible</title>
+      <link>https://ridingintraffic.github.io/docs/docs/ansible/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/ansible/</guid>
+      <description>ansible notes https://galaxy.ansible.com/ Galaxy is your hub for finding, reusing and sharing Ansible content
+https://github.com/wilmardo/ansible-role-plex repo for the plex install with ansible&amp;hellip; something for later</description>
+    </item>
+    
+    <item>
+      <title>chef</title>
+      <link>https://ridingintraffic.github.io/docs/docs/chef/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/chef/</guid>
+      <description> chef $ kitchen list $ kitchen converge ;# creates the vagrant box from the kitchen.yml $ kitchen exec -c whoami ;#fire a command from insid ethe vagrant box $ kitchen verify ;# runs the tests that are configured $ kitchen login ; # logs into the box directly gives a shell  </description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>https://ridingintraffic.github.io/docs/docs/cli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/cli/</guid>
+      <description>shasum Getting a shasum on something&amp;hellip; useful so lets do it with this
+shasum -a 256 &amp;lt;filename&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>qmk</title>
+      <link>https://ridingintraffic.github.io/docs/docs/qmk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/qmk/</guid>
+      <description>qmk there is a bunch of qmk stuff out there this is what you need for qmk and the ergodox ez keyboard…
+https://docs.qmk.fm/ - qmk documentation
+https://www.pjrc.com/teensy/loader_linux.html 
+***if you are programming it with the qmk toolbox make sure that your have karabiner elements turned off
+docker images qmk builder can be done via docker. This means that it is way easier to build than dealing with all the dependencies for building, just use docker.</description>
+    </item>
+    
+    <item>
+      <title>tmux</title>
+      <link>https://ridingintraffic.github.io/docs/docs/tmux/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/tmux/</guid>
+      <description>vim scrolling Ctrl-b [ then you can use your normal navigation keys to scroll around (eg. Up Arrow or PgDn). Press q to quit scroll mode.
+Selection and copying once in acroll mode spacebar character slect mode
+once in scroll mode shift+V line select mode
+once selected y copies to clipboard
+paste like normal</description>
+    </item>
+    
+  </channel>
+</rss>
