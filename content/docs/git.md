@@ -17,11 +17,25 @@ git revert <commit-of-first-revert>
 ```
 
 ```
-git log --follow -p <filename/path>      #view the log of a single file
-
 # git rebase squash
 git rebase -i <commit hash>; where the commit hash is the one before yours
 the reword all of hte commits except for your latest one, the latest one you pick
 then check the git log to make sure that you only have one commit
 git push --force     # which will force your local into the branch you are working on and hopefully everything will get squashed 
+```
+ 
+## Branches
+```
+$ git branch <branchname>             # creating a branch
+$ git branch -d <branchname>          # deleting a branch
+$ git branch -av                      # displaying branch info
+$ git branch --merged                 # to look at the merged branches
+$ git branch --no-merged              # unmerged branches
+```
+
+## Git Log
+```
+$ git log --stat --pretty=oneline master...your-branch                      # look at the changed between branches
+$ git log --left-right --graph --cherry-pick --oneline master...your_branch # look at the changed between branches with more colors
+$ git log --follow -p <filename/path>                                       #view the log of a single file
 ```
