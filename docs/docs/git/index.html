@@ -203,7 +203,15 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#branches">Branches</a></li>
+<li><a href="#git-log">Git Log</a></li>
+</ul></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -221,7 +229,9 @@
     
     
     
-    <pre><code>## Git Revert ##
+    
+
+<pre><code>## Git Revert ##
 Git checkout master    #then run a git log and get the id of the merge commit.  
 git log                #then revert to that commit:
 git revert -m 1 &lt;merge-commit&gt; # With ‘-m 1’ we tell git to revert to the first parent of the mergecommit on the master branch. -m 2 would specify to revert to the first parent on the develop branch where the merge came from initially.
@@ -232,13 +242,27 @@ This changes the data to look like before the merge, but not the history. So it�
 git revert &lt;commit-of-first-revert&gt;
 </code></pre>
 
-<pre><code>git log --follow -p &lt;filename/path&gt;      #view the log of a single file
-
-# git rebase squash
+<pre><code># git rebase squash
 git rebase -i &lt;commit hash&gt;; where the commit hash is the one before yours
 the reword all of hte commits except for your latest one, the latest one you pick
 then check the git log to make sure that you only have one commit
 git push --force     # which will force your local into the branch you are working on and hopefully everything will get squashed 
+</code></pre>
+
+<h2 id="branches">Branches</h2>
+
+<pre><code>$ git branch &lt;branchname&gt;             # creating a branch
+$ git branch -d &lt;branchname&gt;          # deleting a branch
+$ git branch -av                      # displaying branch info
+$ git branch --merged                 # to look at the merged branches
+$ git branch --no-merged              # unmerged branches
+</code></pre>
+
+<h2 id="git-log">Git Log</h2>
+
+<pre><code>$ git log --stat --pretty=oneline master...your-branch                      # look at the changed between branches
+$ git log --left-right --graph --cherry-pick --oneline master...your_branch # look at the changed between branches with more colors
+$ git log --follow -p &lt;filename/path&gt;                                       #view the log of a single file
 </code></pre>
 
 
