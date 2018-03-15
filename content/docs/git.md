@@ -39,3 +39,22 @@ $ git log --stat --pretty=oneline master...your-branch                      # lo
 $ git log --left-right --graph --cherry-pick --oneline master...your_branch # look at the changed between branches with more colors
 $ git log --follow -p <filename/path>                                       #view the log of a single file
 ```
+
+## Git Resets
+```
+$ git log
+....
+commit 766f988169
+commit 82f5ea34
+git reset --hard 766;              # will reset directly to that old version throwing away everything in between
+
+```
+
+## Git Diff
+```
+$ git diff                               # Find out what changes you’ve made since the last commit with:
+$ git diff "@{yesterday}"                # Or since yesterday:
+$ git diff 1b6d "master~2"               # Or between a particular version and 2 versions ago:
+$ git whatchanged --since="2 weeks ago"
+
+```
