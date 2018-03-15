@@ -84,6 +84,13 @@
 	"content": " shasum Getting a shasum on something\u0026hellip; useful so lets do it with this\nshasum -a 256 \u0026lt;filename\u0026gt;\n"
 },
 {
+	"uri": "https://ridingintraffic.github.io/docs/docs/k8s/",
+	"title": "kubernetes",
+	"tags": [],
+	"description": "kubernetes",
+	"content": " https://github.com/kubernetes/dashboard\ncommands minikub kubectl\n"
+},
+{
 	"uri": "https://ridingintraffic.github.io/docs/docs/qmk/",
 	"title": "qmk",
 	"tags": [],
