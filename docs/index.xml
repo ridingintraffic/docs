@@ -90,6 +90,17 @@ docker images qmk builder can be done via docker. This means that it is way easi
     </item>
     
     <item>
+      <title>ssh</title>
+      <link>https://ridingintraffic.github.io/docs/docs/ssh/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ridingintraffic.github.io/docs/docs/ssh/</guid>
+      <description>ssh SSH Proxy
+ssh -o ProxyCommand=&#39;ssh -W %h:%p user@bastion&#39; user@target  ~/.ssh/config
+Host bastion Hostname my-bastion-host.example.com Host my_server Hostname 10.0.1.18 ProxyCommand ssh bastion -W %h:%p  then you can use: $ ssh my_server</description>
+    </item>
+    
+    <item>
       <title>tmux</title>
       <link>https://ridingintraffic.github.io/docs/docs/tmux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

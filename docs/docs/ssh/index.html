@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.36.1" />
 
-<title>My First Post :: docs</title>
+<title>ssh :: docs</title>
 <link rel="shortcut icon" href="/docs/images/favicon.png" type="image/x-icon" />
 <link href="/docs/css/nucleus.css" rel="stylesheet">
 <link href="/docs/css/font-awesome.min.css" rel="stylesheet">
@@ -25,12 +25,12 @@
     display:none !important;
   }
 </style>
-<meta name="description" content="">
+<meta name="description" content="ssh notes">
 
 
     
   </head>
-  <body data-url="/docs/posts/my-first-post/">
+  <body data-url="/docs/docs/ssh/">
     
       <div id="headermain"></div>
 <nav id="sidebar" class="showVisitedLinks">
@@ -66,10 +66,11 @@
             <li data-nav-id="/docs/" class="dd-item">
             <a href="/docs/"><i class="fa fa-fw fa-home"></i></a>
             </li>
-    <li data-nav-id="/docs/docs/" class="dd-item haschildren
+    <li data-nav-id="/docs/docs/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/docs/docs/">Docs</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/docs/docs/">Docs</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/docs/docs/hugo/" class="dd-item">
@@ -114,7 +115,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/docs/docs/ssh/" class="dd-item">
+      <li data-nav-id="/docs/docs/ssh/" class="dd-item active">
         <div>
           <a href="/docs/docs/ssh/">
             ssh
@@ -130,14 +131,13 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/docs/posts/" class="dd-item parent haschildren
+    <li data-nav-id="/docs/posts/" class="dd-item haschildren
         ">
       <div>
-      <a href="/docs/posts/">Posts</a>
-            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/docs/posts/">Posts</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/docs/posts/my-first-post/" class="dd-item active">
+      <li data-nav-id="/docs/posts/my-first-post/" class="dd-item">
         <div>
           <a href="/docs/posts/my-first-post/">
             My First Post
@@ -177,7 +177,7 @@
       
       
     <div id="top-github-link">
-      <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/posts/my-first-post.md" target="blank">
+      <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/docs/ssh.md" target="blank">
         <i class="fa fa-code-fork"></i>
         Improve this page
       </a>
@@ -197,7 +197,7 @@
 
 
 
- <a href='/docs/'></a> > <a href='/docs/posts/'>Posts</a> > My First Post
+ <a href='/docs/'></a> > <a href='/docs/docs/'>Docs</a> > ssh
 
  
 
@@ -210,7 +210,11 @@
     
     <div class="progress">
         <div class="wrapper">
-    
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#ssh">ssh</a></li>
+</ul>
+</nav>
         </div>
     </div>
     
@@ -220,7 +224,7 @@
 
 <div id="body-inner">
   
-    <h1>My First Post</h1>
+    <h1>ssh</h1>
   
 
 
@@ -228,7 +232,27 @@
     
     
     
-    <p>adding something here</p>
+    
+
+<h1 id="ssh">ssh</h1>
+
+<p>SSH Proxy</p>
+
+<pre><code>ssh -o ProxyCommand='ssh -W %h:%p user@bastion' user@target
+</code></pre>
+
+<p>~/.ssh/config</p>
+
+<pre><code>Host bastion
+  Hostname my-bastion-host.example.com
+
+Host my_server
+  Hostname 10.0.1.18
+  ProxyCommand ssh bastion -W %h:%p
+</code></pre>
+
+<p>then you can use:
+<code>$ ssh my_server</code></p>
 
 
     

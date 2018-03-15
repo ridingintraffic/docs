@@ -115,6 +115,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/docs/docs/ssh/" class="dd-item">
+        <div>
+          <a href="/docs/docs/ssh/">
+            ssh
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/docs/docs/tmux/" class="dd-item">
         <div>
           <a href="/docs/docs/tmux/">
@@ -209,6 +216,8 @@
 <ul>
 <li><a href="#branches">Branches</a></li>
 <li><a href="#git-log">Git Log</a></li>
+<li><a href="#git-resets">Git Resets</a></li>
+<li><a href="#git-diff">Git Diff</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -263,6 +272,25 @@ $ git branch --no-merged              # unmerged branches
 <pre><code>$ git log --stat --pretty=oneline master...your-branch                      # look at the changed between branches
 $ git log --left-right --graph --cherry-pick --oneline master...your_branch # look at the changed between branches with more colors
 $ git log --follow -p &lt;filename/path&gt;                                       #view the log of a single file
+</code></pre>
+
+<h2 id="git-resets">Git Resets</h2>
+
+<pre><code>$ git log
+....
+commit 766f988169
+commit 82f5ea34
+git reset --hard 766;              # will reset directly to that old version throwing away everything in between
+
+</code></pre>
+
+<h2 id="git-diff">Git Diff</h2>
+
+<pre><code>$ git diff                               # Find out what changes you’ve made since the last commit with:
+$ git diff &quot;@{yesterday}&quot;                # Or since yesterday:
+$ git diff 1b6d &quot;master~2&quot;               # Or between a particular version and 2 versions ago:
+$ git whatchanged --since=&quot;2 weeks ago&quot;
+
 </code></pre>
 
 
