@@ -8,6 +8,7 @@ description: kubernetes
 
 
 # commands
-minikub
+```
+minikube
 kubectl
-
+```
