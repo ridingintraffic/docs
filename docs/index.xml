@@ -82,8 +82,9 @@ shasum -a 256 &amp;lt;filename&amp;gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ridingintraffic.github.io/docs/docs/k8s/</guid>
-      <description>https://github.com/kubernetes/dashboard
-commands minikub kubectl</description>
+      <description> https://github.com/kubernetes/dashboard
+ansible roles for minikube https://github.com/reachlin/k8s0
+commands minikube kubectl  </description>
     </item>
     
     <item>
